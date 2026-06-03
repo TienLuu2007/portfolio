@@ -101,14 +101,33 @@
         .project-title {
             font-size: 1.2rem;
             font-weight: 600;
-            margin: 0 0 10px 0;
+            margin: 0 0 5px 0;
+        }
+
+        .project-title a {
             color: var(--accent);
+            text-decoration: none;
+        }
+
+        .project-title a:hover {
+            text-decoration: underline;
         }
 
         .project-desc {
             color: var(--text-muted);
             margin: 0 0 15px 0;
             font-size: 0.95rem;
+        }
+
+        .project-features {
+            margin: 0 0 15px 0;
+            padding-left: 20px;
+            color: var(--text-muted);
+            font-size: 0.9rem;
+        }
+
+        .project-features li {
+            margin-bottom: 5px;
         }
 
         .tags {
@@ -147,23 +166,21 @@
             <h2>Featured Projects</h2>
             <div class="project-grid">
                 
-                <!-- Project 1 -->
                 <div class="project-card">
-                    <p class="project-title">Maze Generation & Pathfinding Visualizer</p>
-                    <p class="project-desc">Built a system to generate perfect $n \times n$ mazes and implemented pathfinding algorithms to find optimal trajectories from start to finish.</p>
+                    <p class="project-title">
+                        <a href="https://github.com/TienLuu2007/Near-Duplicate-Detection" target="_blank">Near-Duplicate Detection System</a>
+                    </p>
+                    <p class="project-desc">Designed and implemented an algorithmic pipeline to efficiently identify similar, non-identical text files and versions across massive datasets.</p>
+                    <ul class="project-features">
+                        <li>Utilizes advanced text preprocessing including tokenization and filtering.</li>
+                        <li>Implements text similarity metrics to accurately handle document lifecycle versions and plagiarism checks.</li>
+                        <li>Optimized for low-latency detection across dense code or document storage environments.</li>
+                    </ul>
                     <div class="tags">
-                        <span class="tag">Python</span>
                         <span class="tag">Algorithms</span>
-                    </div>
-                </div>
-
-                <!-- Project 2 -->
-                <div class="project-card">
-                    <p class="project-title">Data Structures & Algorithms Repository</p>
-                    <p class="project-desc">A collection of optimized solutions for complex algorithmic problems, network flows, and competitive programming structures.</p>
-                    <div class="tags">
-                        <span class="tag">C++</span>
-                        <span class="tag">Data Structures</span>
+                        <span class="tag">Text Mining</span>
+                        <span class="tag">Data Optimization</span>
+                        <span class="tag">GitHub Project</span>
                     </div>
                 </div>
 
