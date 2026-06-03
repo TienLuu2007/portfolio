@@ -2,18 +2,174 @@
 <html lang="en">
 <head>
     <meta charset="UTF-8">
-    <title>My Resume</title>
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Lưu Minh Tiến | Portfolio</title>
+    <style>
+        :root {
+            --bg-color: #0f172a;
+            --card-bg: #1e293b;
+            --text-main: #f8fafc;
+            --text-muted: #94a3b8;
+            --accent: #38bdf8;
+            --border: #334155;
+        }
+
+        body {
+            font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, Helvetica, Arial, sans-serif;
+            background-color: var(--bg-color);
+            color: var(--text-main);
+            line-height: 1.6;
+            margin: 0;
+            padding: 40px 20px;
+            display: flex;
+            justify-content: center;
+        }
+
+        .container {
+            max-width: 750px;
+            width: 100%;
+        }
+
+        header {
+            margin-bottom: 40px;
+            border-bottom: 1px solid var(--border);
+            padding-bottom: 20px;
+        }
+
+        h1 {
+            font-size: 2.5rem;
+            margin: 0 0 10px 0;
+            color: var(--text-main);
+        }
+
+        .subtitle {
+            font-size: 1.2rem;
+            color: var(--accent);
+            margin: 0;
+            font-weight: 500;
+        }
+
+        section {
+            margin-bottom: 40px;
+        }
+
+        h2 {
+            font-size: 1.5rem;
+            border-left: 4px solid var(--accent);
+            padding-left: 12px;
+            margin-bottom: 20px;
+            color: var(--text-main);
+        }
+
+        .education-block {
+            background-color: var(--card-bg);
+            border: 1px solid var(--border);
+            border-radius: 8px;
+            padding: 20px;
+        }
+
+        .university {
+            font-size: 1.15rem;
+            font-weight: 600;
+            margin: 0 0 5px 0;
+        }
+
+        .degree {
+            color: var(--text-muted);
+            margin: 0;
+        }
+
+        .project-grid {
+            display: grid;
+            grid-template-columns: 1fr;
+            gap: 20px;
+        }
+
+        .project-card {
+            background-color: var(--card-bg);
+            border: 1px solid var(--border);
+            border-radius: 8px;
+            padding: 20px;
+            transition: transform 0.2s ease, border-color 0.2s ease;
+        }
+
+        .project-card:hover {
+            transform: translateY(-2px);
+            border-color: var(--accent);
+        }
+
+        .project-title {
+            font-size: 1.2rem;
+            font-weight: 600;
+            margin: 0 0 10px 0;
+            color: var(--accent);
+        }
+
+        .project-desc {
+            color: var(--text-muted);
+            margin: 0 0 15px 0;
+            font-size: 0.95rem;
+        }
+
+        .tags {
+            display: flex;
+            gap: 8px;
+            flex-wrap: wrap;
+        }
+
+        .tag {
+            background-color: rgba(56, 189, 248, 0.1);
+            color: var(--accent);
+            padding: 4px 10px;
+            border-radius: 4px;
+            font-size: 0.8rem;
+            font-weight: 500;
+        }
+    </style>
 </head>
 <body>
-    <h1>Your Name</h1>
-    <p>Computer Science & Physics Student</p>
-    
-    <h2>Education</h2>
-    <p>University Name - Bachelor of Science</p>
 
-    <h2>Projects</h2>
-    <ul>
-        <li><strong>Project Name:</strong> Brief description of an interesting algorithm or system you built.</li>
-    </ul>
+    <div class="container">
+        <header>
+            <h1>Lưu Minh Tiến</h1>
+            <p class="subtitle">Information Technology Student</p>
+        </header>
+
+        <section id="education">
+            <h2>Education</h2>
+            <div class="education-block">
+                <p class="university">HCMUS - VNU (Vietnam National University Ho Chi Minh City - University of Science)</p>
+                <p class="degree">Bachelor of Information Technology</p>
+            </div>
+        </section>
+
+        <section id="projects">
+            <h2>Featured Projects</h2>
+            <div class="project-grid">
+                
+                <!-- Project 1 -->
+                <div class="project-card">
+                    <p class="project-title">Maze Generation & Pathfinding Visualizer</p>
+                    <p class="project-desc">Built a system to generate perfect $n \times n$ mazes and implemented pathfinding algorithms to find optimal trajectories from start to finish.</p>
+                    <div class="tags">
+                        <span class="tag">Python</span>
+                        <span class="tag">Algorithms</span>
+                    </div>
+                </div>
+
+                <!-- Project 2 -->
+                <div class="project-card">
+                    <p class="project-title">Data Structures & Algorithms Repository</p>
+                    <p class="project-desc">A collection of optimized solutions for complex algorithmic problems, network flows, and competitive programming structures.</p>
+                    <div class="tags">
+                        <span class="tag">C++</span>
+                        <span class="tag">Data Structures</span>
+                    </div>
+                </div>
+
+            </div>
+        </section>
+    </div>
+
 </body>
 </html>
